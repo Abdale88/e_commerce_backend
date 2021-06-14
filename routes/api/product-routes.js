@@ -13,7 +13,7 @@ router.get('/', async (req, res) => {
           model: Category,
         },
         {
-          model: Tag
+          model: Tag, through: ProductTag, as: 'product_tags'
         }
       ]
     });
@@ -34,7 +34,7 @@ router.get('/:id', async (req, res) => {
           model: Category
         },
         {
-          model: Tag
+          model: Tag, through: ProductTag, as: 'product_tags'
         }
       ]
     });
@@ -50,14 +50,14 @@ router.get('/:id', async (req, res) => {
 
 // create new product
 router.post('/',(req, res) => {
-  Product.create(
-    {
-      product_name: req.body.product_name,
-      price: req.body.price,  
-      stock: req.body.stock,
-      tagIds: req.body.tagIds,
-    }
-  )
+  // Product.create(
+  //   {
+  //     product_name: req.body.product_name,
+  //     price: req.body.price,  
+  //     stock: req.body.stock,
+  //     tagIds: req.body.tagIds,
+  //   }
+  // )
   /* req.body should look like this...
     {
       product_name: "Basketball",
@@ -141,7 +141,7 @@ router.delete('/:id', async (req, res) => {
     if(!productData){
       res.status(404).json({message: 'No product found with this id!'});
     }
-    res.status(200).json(productData);
+    // res.status(200).json(productData);
   } catch (error) {
     res.status(500).json(error);
   }
