@@ -137,9 +137,13 @@ router.delete('/:id', async (req, res) => {
       where: {
         id: req.params.id,
       }
-    })
+    });
+    if(!productData){
+      res.status(404).json({message: 'No product found with this id!'});
+    }
+    res.status(200).json(productData);
   } catch (error) {
-    
+    res.status(500).json(error);
   }
 });
 
