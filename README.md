@@ -5,8 +5,8 @@
    GitHub License ![GitHub license](https://img.shields.io/badge/license-MIT-coral.svg)
    
 ## Description
- This app is a back end for an e-commerce site. Hence, the app  uses the latest technologies
-SO THAT my company can compete with other e-commerce companies. Moreover, the app mainly uses Express.js API to use Sequelize to interact with a MySQL database.
+ This app is a back end for an e-commerce site. Moreover, the app  uses the latest technologies
+so that the companies can compete with other e-commerce companies. Moreover, the app mainly uses Express.js API to use Sequelize to interact with a MySQL database.
    
    ## Table of Contents
 
