@@ -49,7 +49,7 @@ router.get('/:id', async (req, res) => {
 });
 
 // create new product
-router.post('/',(req, res) => {
+router.post('/', (req, res) => {
 
   /* req.body should look like this...
     {
@@ -83,6 +83,7 @@ router.post('/',(req, res) => {
 
 // update product
 router.put('/:id', (req, res) => {
+  console.log('put something ', req.body)
   // update product data
   Product.update(req.body, {
     where: {
@@ -118,7 +119,7 @@ router.put('/:id', (req, res) => {
     })
     .then((updatedProductTags) => res.json(updatedProductTags))
     .catch((err) => {
-      // console.log(err);
+      console.error("this is the error",err);
       res.status(400).json(err);
     });
 });
