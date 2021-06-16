@@ -48,8 +48,5 @@ cabdale989@gmail.com
 ## Demo
 https://youtu.be/M3IrKBMSDsg
     
- 
-
-
 
 ![screenshot](./images/img.png)
