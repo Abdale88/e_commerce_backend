@@ -49,4 +49,4 @@ cabdale989@gmail.com
 https://youtu.be/M3IrKBMSDsg
     
   
-![screenshot](./images/img.png)
+![](./images/img.png)
