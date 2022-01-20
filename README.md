@@ -62,7 +62,7 @@ cabdale989@gmail.com
 ![]https://github.com/Abdale88
  
 
-![screenshot](./images/img.png)
+![screenshot](./image/img.png)
 =======
   
 
